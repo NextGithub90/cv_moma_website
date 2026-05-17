@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV MOMA | Kontraktor & Leveransir</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        rose: {
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="antialiased text-slate-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 xl:px-16">
+            <div class="flex justify-between items-center relative">
+                <!-- Logo -->
+                <a href="#beranda" class="flex items-center gap-3 relative z-20">
+                    <img src="img/logo.png" alt="Logo CV MOMA" class="w-10 h-10 md:w-12 md:h-12 object-contain">
+                    <div class="hidden sm:block">
+                        <h1 id="logo-text" class="text-xl md:text-2xl font-bold text-white leading-none">CV. MOMA</h1>
+                        <p class="text-[10px] md:text-xs text-emerald-400 font-semibold tracking-wider uppercase mt-1">
+                            Kontraktor & Leveransir</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda"
+                        class="nav-link text-white hover:text-emerald-300 font-medium transition-colors">Beranda</a>
+                    <a href="#tentang"
+                        class="nav-link text-white hover:text-emerald-300 font-medium transition-colors">Tentang
+                        Kami</a>
+                    <a href="#layanan"
+                        class="nav-link text-white hover:text-emerald-300 font-medium transition-colors">Layanan</a>
+                    <a href="#proyek"
+                        class="nav-link text-white hover:text-emerald-300 font-medium transition-colors">Proyek</a>
+                    <a href="#legalitas"
+                        class="nav-link text-white hover:text-emerald-300 font-medium transition-colors">Legalitas</a>
+                    <a href="#kontak" id="nav-cta"
+                        class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Hubungi
+                        Kami</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white hover:text-emerald-400 focus:outline-none transition-colors relative z-20 p-2">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden absolute top-full left-0 w-full bg-slate-900 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden max-h-0 border-t border-transparent">
+            <div class="flex flex-col px-6 py-6 space-y-4">
+                <a href="#beranda"
+                    class="mobile-nav-link text-slate-300 hover:text-emerald-400 font-medium transition-colors text-lg border-b border-white/5 pb-2">Beranda</a>
+                <a href="#tentang"
+                    class="mobile-nav-link text-slate-300 hover:text-emerald-400 font-medium transition-colors text-lg border-b border-white/5 pb-2">Tentang
+                    Kami</a>
+                <a href="#layanan"
+                    class="mobile-nav-link text-slate-300 hover:text-emerald-400 font-medium transition-colors text-lg border-b border-white/5 pb-2">Layanan</a>
+                <a href="#proyek"
+                    class="mobile-nav-link text-slate-300 hover:text-emerald-400 font-medium transition-colors text-lg border-b border-white/5 pb-2">Proyek</a>
+                <a href="#legalitas"
+                    class="mobile-nav-link text-slate-300 hover:text-emerald-400 font-medium transition-colors text-lg border-b border-white/5 pb-2">Legalitas</a>
+                <a href="#kontak"
+                    class="mobile-nav-link text-center bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md mt-4">Hubungi
+                    Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative h-[75vh] md:h-screen flex items-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="img/hero.jpeg" alt="Industrial Construction Papua" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 xl:px-16 pt-16 md:pt-20">
+            <div
+                class="max-w-4xl mx-auto md:mx-0 text-center md:text-left hero-content flex flex-col items-center md:items-start">
+                <span
+                    class="inline-block py-1 md:py-1.5 px-3 md:px-4 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-[10px] md:text-sm font-semibold tracking-wide mb-4 md:mb-6 backdrop-blur-sm">
+                    BEROPERASI DI TIMIKA, PAPUA TENGAH
+                </span>
+                <h1
+                    class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug md:leading-[1.15] tracking-tight mb-4 md:mb-6">
+                    Membangun Masa Depan Terintegrasi & Berkelanjutan
+                </h1>
+                <p
+                    class="hidden sm:block text-base md:text-xl text-slate-300 mb-8 md:mb-10 leading-relaxed max-w-2xl mx-auto md:mx-0 font-light">
+                    Perusahaan terdepan dalam bidang konstruksi, maintenance, perdagangan umum, dan penyediaan SDM
+                    unggul untuk swasta maupun pemerintah.
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 md:gap-4 w-full sm:w-auto px-4 sm:px-0">
+                    <a href="#tentang"
+                        class="w-full sm:w-auto justify-center bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3.5 md:py-4 rounded-full font-medium transition-all shadow-lg hover:shadow-emerald-500/30 flex items-center gap-2">
+                        Pelajari Lebih Lanjut <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#proyek"
+                        class="w-full sm:w-auto justify-center bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 px-8 py-3.5 md:py-4 rounded-full font-medium transition-all flex items-center gap-2">
+                        Lihat Proyek Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl  md:aspect-[1/0] aspect-[1/0]">
+                        <img src="img/bahawHero.jpeg" alt="Tim CV Moma" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <div
+                                class="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/20 inline-block">
+                                <p class="text-emerald-600 font-bold text-3xl">20+ <span
+                                        class="text-sm text-slate-600 font-medium">Tahun Pengalaman</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-emerald-600 font-semibold tracking-wider uppercase mb-3">Tentang CV MOMA</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-6">Mitra Terpercaya Sejak 2003</h3>
+                    <div class="prose prose-lg text-slate-600 mb-8">
+                        <p class="mb-4">
+                            CV Moma adalah sebuah perusahaan yang bergerak pada bidang konstruksi, maintenance,
+                            perdagangan umum, penyedian SDM, dan penggadaan barang baik swasta maupun pemerintah yang
+                            beroperasi di Timika Papua Tengah.
+                        </p>
+                        <p>
+                            Sebelumnya merupakan usaha perorangan yang dibina <strong>PT Freeport Indonesia</strong>
+                            melalui departemen SLD. Pada tahun 2003, disahkan menjadi Comanditer (CV) oleh notaris.
+                            Direktur utama kami, <strong>Bpk. Jim Yahya Magai</strong>, adalah putra asli daerah dari
+                            suku Damal yang berkomitmen memajukan potensi lokal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Vision & Mission -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                <!-- Visi -->
+                <div
+                    class="group relative bg-white hover:bg-emerald-600 p-10 lg:p-12 rounded-3xl border border-slate-200 hover:border-emerald-600 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 opacity-[0.03] group-hover:opacity-20 transition-opacity duration-500 group-hover:scale-110">
+                        <i data-lucide="compass" class="w-64 h-64 text-emerald-600 group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 group-hover:from-white group-hover:to-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-8 shadow-inner group-hover:scale-110 transition-all duration-500 border border-emerald-100 group-hover:border-white/20">
+                            <i data-lucide="compass" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-3xl font-extrabold text-slate-900 group-hover:text-white transition-colors duration-500 mb-4">Visi Kami</h4>
+                        <p class="text-slate-600 group-hover:text-emerald-50 transition-colors duration-500 leading-relaxed font-medium text-lg">
+                            Menjadi perusahaan terdepan, berkelanjutan, dan kompeten dalam memberikan nilai tambah bagi
+                            masyarakat, bangsa, dan negara.
+                        </p>
+                    </div>
+                </div>
+                <!-- Misi -->
+                <div
+                    class="group relative bg-white hover:bg-rose-600 p-10 lg:p-12 rounded-3xl border border-slate-200 hover:border-rose-600 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute -top-12 -right-12 opacity-[0.03] group-hover:opacity-20 transition-opacity duration-500 group-hover:scale-110">
+                        <i data-lucide="layers" class="w-64 h-64 text-rose-600 group-hover:text-white transition-colors duration-500"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-rose-100 to-rose-50 group-hover:from-white group-hover:to-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-8 shadow-inner group-hover:scale-110 transition-all duration-500 border border-rose-100 group-hover:border-white/20">
+                            <i data-lucide="layers" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-3xl font-extrabold text-slate-900 group-hover:text-white transition-colors duration-500 mb-4">Misi Kami</h4>
+                        <p class="text-slate-600 group-hover:text-rose-50 transition-colors duration-500 leading-relaxed font-medium text-lg">
+                            Membangun bisnis terintegrasi dengan struktur keuangan sehat, efisien, inovatif, kreatif,
+                            bervisi global, dan menyejahterakan karyawan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section -->
+    <section id="struktur" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full mix-blend-screen filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-emerald-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-3">Tim Kami
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">Struktur Organisasi</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">Kolaborasi dan dedikasi dari setiap
+                    lapisan manajemen hingga operasional lapangan demi memastikan kelancaran setiap proyek perusahaan.
+                </p>
+            </div>
+
+            <!-- Organization Chart / Cards -->
+            <div class="flex flex-col items-center space-y-8 md:space-y-0">
+                <!-- Level 1: Direktur -->
+                <div class="w-full max-w-md org-card relative md:mb-8 z-10">
+                    <div
+                        class="bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-xl text-center hover:border-emerald-500/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i data-lucide="crown" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3">Direktur</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Bertanggung jawab atas pengambilan keputusan
+                            strategis perusahaan, pengawasan operasional serta hubungan kerja sama dengan pihak
+                            eksternal.</p>
+                    </div>
+                    <!-- Connector line -->
+                    <div class="hidden md:block absolute left-1/2 -bottom-8 w-px h-8 bg-slate-700"></div>
+                </div>
+
+                <!-- Level 2: PJO -->
+                <div class="w-full max-w-md org-card relative md:mb-8 z-10">
+                    <div
+                        class="bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-xl text-center hover:border-blue-500/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                            <i data-lucide="briefcase" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-1">PJO</h4>
+                        <p class="text-blue-400 text-xs font-bold mb-4 uppercase tracking-wider">Penanggung Jawab
+                            Operasional</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mengkoordinasikan pelaksanaan pekerjaan
+                            lapangan, logistik dan jadwal kegiatan operasional.</p>
+                    </div>
+                    <!-- Connector line down to branching -->
+                    <div class="hidden md:block absolute left-1/2 -bottom-8 w-px h-8 bg-slate-700"></div>
+                </div>
+
+                <!-- Horizontal Connector Line (Branching) -->
+                <div class="hidden md:block w-[66.666%] h-px bg-slate-700 relative mx-auto">
+                    <!-- Vertical drops -->
+                    <div class="absolute left-0 top-0 w-px h-8 bg-slate-700"></div>
+                    <div class="absolute left-1/2 top-0 w-px h-8 bg-slate-700 -translate-x-1/2"></div>
+                    <div class="absolute right-0 top-0 w-px h-8 bg-slate-700"></div>
+                </div>
+
+                <!-- Level 3: Departments -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:pt-8 relative z-10">
+                    <!-- Keuangan -->
+                    <div
+                        class="org-card bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-xl text-center hover:border-rose-500/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-rose-500/10 text-rose-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 group-hover:text-white transition-colors">
+                            <i data-lucide="wallet" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Bagian Keuangan</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Bertanggung jawab terhadap pengelolaan
+                            keuangan, pencatatan transaksi, pelaporan keuangan dan pengawasan anggaran.</p>
+                    </div>
+
+                    <!-- HR / Admin -->
+                    <div
+                        class="org-card bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-xl text-center hover:border-purple-500/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-purple-500/10 text-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                            <i data-lucide="users" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Staff HR / Admin</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Bertanggung jawab dalam perhitungan pengupahan
+                            serta mengelola administrasi perusahaan, dokumentasi, pengarsipan serta proyek.</p>
+                    </div>
+
+                    <!-- Staf Lapangan -->
+                    <div
+                        class="org-card bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-xl text-center hover:border-amber-500/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                            <i data-lucide="hard-hat" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Staf Lapangan</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Melaksanakan kegiatan teknis dan operasional
+                            sesuai kebutuhan pekerjaan dan proyek.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services / Capacity Section -->
+        <section id="layanan" class="py-24 bg-slate-50 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-emerald-600 text-sm md:text-base font-semibold tracking-wider uppercase mb-3">
+                            Kapasitas & Layanan</h2>
+                        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">Solusi
+                            Komprehensif Proyek Anda</h3>
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-10 lg:border-l-2 lg:border-emerald-500/20">
+                        <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+                            Didukung tenaga ahli dan sistem kerja yang mengedepankan ketepatan waktu, kepatuhan
+                            administrasi, dan kualitas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1 -->
+                    <div
+                        class="service-card glass-card p-8 rounded-2xl cursor-pointer bg-white relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                                <i data-lucide="hard-hat" class="w-7 h-7"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">Konstruksi & Maintenance</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Pengelolaan operasional lapangan,
+                                pemeliharaan infrastruktur, dan pembangunan fasilitas dengan standar tinggi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div
+                        class="service-card glass-card p-8 rounded-2xl cursor-pointer bg-white relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                                <i data-lucide="package" class="w-7 h-7"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">Pengadaan Barang & Jasa</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Penyediaan material dan manajemen logistik
+                                yang efisien untuk mendukung kelancaran proyek swasta dan pemerintah.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div
+                        class="service-card glass-card p-8 rounded-2xl cursor-pointer bg-white relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                                <i class="w-7 h-7" data-lucide="users"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">Penyediaan SDM</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Penyediaan tenaga kerja profesional dan
+                                staf lapangan yang kompeten sesuai dengan kebutuhan industri.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div
+                        class="service-card glass-card p-8 rounded-2xl cursor-pointer bg-white relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                                <i class="w-7 h-7" data-lucide="file-text"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-3">Manajemen Proyek</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Kapasitas penuh dalam pengelolaan
+                                administrasi proyek dan koordinasi dengan berbagai pemangku kepentingan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyek" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-emerald-600 text-sm md:text-base font-semibold tracking-wider uppercase mb-3">
+                        Pengalaman Proyek</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900">Portofolio Kerja Kami</h3>
+                </div>
+
+                <!-- Timeline Layout -->
+                <div class="relative max-w-5xl mx-auto mt-16 pb-12">
+                    <!-- Vertical Center Line (Desktop: Center, Mobile: Left) -->
+                    <div
+                        class="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-slate-200 transform md:-translate-x-1/2 rounded-full">
+                    </div>
+
+                    <!-- Project 1 (Left on Desktop) -->
+                    <div class="relative flex w-full mb-16 md:mb-24 project-card">
+                        <div
+                            class="absolute left-6 md:left-1/2 w-10 h-10 rounded-full bg-white border-4 border-emerald-500 transform -translate-x-1/2 mt-12 md:mt-0 md:top-1/2 md:-translate-y-1/2 z-10 shadow-lg flex items-center justify-center transition-transform hover:scale-110">
+                            <div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                        </div>
+
+                        <!-- Content (Left) -->
+                        <div class="w-full ml-16 md:ml-0 md:w-1/2 md:pr-16">
+                            <div
+                                class="bg-white rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative group p-8 md:p-10">
+                                <div
+                                    class="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold px-4 py-2 rounded-full mb-4">
+                                    2003 - Sekarang
+                                </div>
+                                <p class="text-sm text-emerald-600 font-bold mb-2 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i> PT Freeport Indonesia
+                                </p>
+                                <h4
+                                    class="text-2xl md:text-3xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                                    Pembersihan & Perawatan Saluran Air</h4>
+                                <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                                    Lokasi: Kuala Kencana, LIP, dan MP38-MP39. Lingkup Pekerjaan: Pengendalian Malaria
+                                    di area PT Freeport Indonesia Dept PHMC.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Right on Desktop) -->
+                    <div class="relative flex w-full justify-end mb-16 md:mb-24 project-card">
+                        <div
+                            class="absolute left-6 md:left-1/2 w-10 h-10 rounded-full bg-white border-4 border-rose-500 transform -translate-x-1/2 mt-12 md:mt-0 md:top-1/2 md:-translate-y-1/2 z-10 shadow-lg flex items-center justify-center transition-transform hover:scale-110">
+                            <div class="w-3 h-3 bg-rose-500 rounded-full"></div>
+                        </div>
+
+                        <!-- Content (Right) -->
+                        <div class="w-full ml-16 md:ml-0 md:w-1/2 md:pl-16">
+                            <div
+                                class="bg-white rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative group p-8 md:p-10">
+                                <div
+                                    class="inline-block bg-rose-100 text-rose-700 text-xs font-bold px-4 py-2 rounded-full mb-4">
+                                    2011 - 2013
+                                </div>
+                                <p class="text-sm text-rose-600 font-bold mb-2 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i> Kwamki Narama & SP 4
+                                </p>
+                                <h4
+                                    class="text-2xl md:text-3xl font-bold text-slate-900 mb-3 group-hover:text-rose-600 transition-colors">
+                                    Pembuatan Saluran Air / Drainage</h4>
+                                <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                                    Bekerjasama dengan Dinas Pekerjaan Umum Pemerintah Daerah Kab. Mimika di area Kantor
+                                    Pengadilan Timika.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Left on Desktop) -->
+                    <div class="relative flex w-full project-card">
+                        <div
+                            class="absolute left-6 md:left-1/2 w-10 h-10 rounded-full bg-white border-4 border-blue-500 transform -translate-x-1/2 mt-12 md:mt-0 md:top-1/2 md:-translate-y-1/2 z-10 shadow-lg flex items-center justify-center transition-transform hover:scale-110">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                        </div>
+
+                        <!-- Content (Left) -->
+                        <div class="w-full ml-16 md:ml-0 md:w-1/2 md:pr-16">
+                            <div
+                                class="bg-white rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative group p-8 md:p-10">
+                                <div
+                                    class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-4 py-2 rounded-full mb-4">
+                                    2019 - Sekarang
+                                </div>
+                                <p class="text-sm text-blue-600 font-bold mb-2 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i> PT Freeport Indonesia
+                                </p>
+                                <h4
+                                    class="text-2xl md:text-3xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Maintenance Sumur Pantau</h4>
+                                <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                                    Maintenance sumur pantau dan pengambilan sample air di lingkungan PT Freeport
+                                    Indonesia, Environmental Dept.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Keuangan & Manajemen Section -->
+        <section id="keuangan" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 keuangan-card">
+                    <h2 class="text-emerald-600 text-sm md:text-base font-semibold tracking-wider uppercase mb-3">
+                        Akuntabilitas</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 md:mb-6">Sistem Keuangan</h3>
+                    <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto">
+                        Tata kelola keuangan yang transparan, tertib administrasi, dan akuntabel demi efektivitas
+                        proyek.
+                    </p>
+                </div>
+
+                <!-- Bento Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- A & B: Pengelolaan & Kas Bank (Span 2) -->
+                    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300 keuangan-card">
+                            <div
+                                class="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="wallet" class="w-6 h-6 md:w-7 md:h-7"></i>
+                            </div>
+                            <h4 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-6">Sistem Pengelolaan
+                            </h4>
+                            <ul class="space-y-3 md:space-y-4">
+                                <li class="flex items-center gap-3 text-sm md:text-base text-slate-600"><i
+                                        data-lucide="check-circle-2"
+                                        class="w-4 h-4 md:w-5 md:h-5 text-emerald-500 shrink-0"></i>Rekening Resmi</li>
+                                <li class="flex items-center gap-3 text-sm md:text-base text-slate-600"><i
+                                        data-lucide="check-circle-2"
+                                        class="w-4 h-4 md:w-5 md:h-5 text-emerald-500 shrink-0"></i>Sistem Kas & Bank
+                                </li>
+                                <li class="flex items-center gap-3 text-sm md:text-base text-slate-600"><i
+                                        data-lucide="check-circle-2"
+                                        class="w-4 h-4 md:w-5 md:h-5 text-emerald-500 shrink-0"></i>Pencatatan Transaksi
+                                </li>
+                                <li class="flex items-center gap-3 text-sm md:text-base text-slate-600"><i
+                                        data-lucide="check-circle-2"
+                                        class="w-4 h-4 md:w-5 md:h-5 text-emerald-500 shrink-0"></i>Laporan Berkala</li>
+                                <li class="flex items-center gap-3 text-sm md:text-base text-slate-600"><i
+                                        data-lucide="check-circle-2"
+                                        class="w-4 h-4 md:w-5 md:h-5 text-emerald-500 shrink-0"></i>Kontrol Anggaran
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300 keuangan-card">
+                            <div
+                                class="w-12 h-12 md:w-14 md:h-14 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="building-2" class="w-6 h-6 md:w-7 md:h-7"></i>
+                            </div>
+                            <h4 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-6">Kas & Bank</h4>
+                            <div class="space-y-4 md:space-y-6">
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-semibold text-slate-800 flex items-center gap-2 mb-1"><i
+                                            data-lucide="coins" class="w-4 h-4 md:w-5 md:h-5 text-rose-500"></i> Kas
+                                        Kecil</h5>
+                                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Operasional harian
+                                        dengan batas dan pencatatan rutin.</p>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-semibold text-slate-800 flex items-center gap-2 mb-1"><i
+                                            data-lucide="landmark" class="w-4 h-4 md:w-5 md:h-5 text-emerald-500"></i>
+                                        Kas Bank</h5>
+                                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Transaksi utama demi
+                                        keamanan & transparansi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C: Pencatatan Keuangan (Span 1) -->
+                    <div
+                        class="bg-slate-900 p-6 md:p-8 rounded-3xl border border-slate-800 shadow-xl relative overflow-hidden text-white keuangan-card">
+                        <div class="absolute -right-6 -bottom-6 opacity-10">
+                            <i data-lucide="bar-chart-3" class="w-32 h-32 md:w-48 md:h-48 text-white"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 md:w-14 md:h-14 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 text-emerald-400 border border-white/10">
+                                <i data-lucide="calculator" class="w-6 h-6 md:w-7 md:h-7"></i>
+                            </div>
+                            <h4 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Pencatatan</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <ul class="space-y-3 md:space-y-4">
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Buku Kas & Bank
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Buku Pajak
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Rekap Proyek
+                                    </li>
+                                </ul>
+                                <ul class="space-y-3 md:space-y-4">
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Rekap Gaji
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Posisi Kas
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm md:text-base text-slate-300">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 shrink-0">
+                                        </div>Aset Inventaris
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- D: Dokumentasi (Span 1) -->
+                    <div
+                        class="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300 keuangan-card">
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="folder-check" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-6">Dokumentasi</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Kwitansi</span>
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Faktur</span>
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Invoice</span>
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Berita
+                                Acara</span>
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Absensi</span>
+                            <span
+                                class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-50 text-slate-700 rounded-lg md:rounded-xl text-xs md:text-sm font-medium border border-slate-200">Bukti
+                                Transfer</span>
+                        </div>
+                    </div>
+
+                    <!-- E: Rekrutmen & Penggajian (Span 2) -->
+                    <div
+                        class="lg:col-span-2 bg-gradient-to-br from-emerald-600 to-emerald-800 p-6 md:p-10 rounded-3xl border border-emerald-500 shadow-xl text-white relative overflow-hidden keuangan-card">
+                        <div class="absolute right-0 top-0 opacity-10 transform translate-x-12 -translate-y-12">
+                            <i data-lucide="users" class="w-48 h-48 md:w-64 md:h-64"></i>
+                        </div>
+                        <div class="relative z-10 flex flex-col md:flex-row gap-6 md:gap-10 items-center h-full">
+                            <div class="flex-1 text-center md:text-left">
+                                <div
+                                    class="w-12 h-12 md:w-14 md:h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-4 md:mb-6 border border-white/20 mx-auto md:mx-0">
+                                    <i data-lucide="user-plus" class="w-6 h-6 md:w-7 md:h-7 text-white"></i>
+                                </div>
+                                <h4 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">HR & Penggajian</h4>
+                                <p class="text-emerald-50 text-sm md:text-lg max-w-md mx-auto md:mx-0 leading-relaxed">
+                                    Sistem rekrutmen objektif. Penggajian profesional didasarkan pada:</p>
+                            </div>
+                            <div class="flex-1 grid grid-cols-2 gap-3 md:gap-4 w-full">
+                                <div class="bg-white/10 backdrop-blur-md p-4 md:p-5 rounded-2xl border border-white/20">
+                                    <i data-lucide="file-signature"
+                                        class="w-5 h-5 md:w-6 md:h-6 text-emerald-300 mb-2 md:mb-3"></i>
+                                    <span class="font-semibold block text-sm md:text-lg">Kontrak</span>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-4 md:p-5 rounded-2xl border border-white/20">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 md:w-6 md:h-6 text-emerald-300 mb-2 md:mb-3"></i>
+                                    <span class="font-semibold block text-sm md:text-lg">Tugas</span>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-4 md:p-5 rounded-2xl border border-white/20">
+                                    <i data-lucide="clock"
+                                        class="w-5 h-5 md:w-6 md:h-6 text-emerald-300 mb-2 md:mb-3"></i>
+                                    <span class="font-semibold block text-sm md:text-lg">Absensi</span>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-4 md:p-5 rounded-2xl border border-white/20">
+                                    <i data-lucide="receipt"
+                                        class="w-5 h-5 md:w-6 md:h-6 text-emerald-300 mb-2 md:mb-3"></i>
+                                    <span class="font-semibold block text-sm md:text-lg">Pajak</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legality & HR Section -->
+        <section id="legalitas" class="py-24 bg-white text-slate-900 relative overflow-hidden">
+            <!-- Abstract Shapes -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-5">
+                <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full border-[20px] border-emerald-500"></div>
+                <div class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full border-[15px] border-rose-500"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <!-- Legalitas -->
+                    <div>
+                        <h2 class="text-emerald-600 font-semibold tracking-wider uppercase mb-3">Administrasi &
+                            Legalitas</h2>
+                        <h3 class="text-3xl font-bold mb-8">Tata Kelola Perusahaan Yang Baik</h3>
+                        <p class="text-slate-600 mb-8">CV MOMA menerapkan sistem administrasi yang tertib,
+                            terdokumentasi dan transparan. Pengelolaan keuangan (kas, bank, perpajakan) diatur akuntabel
+                            untuk mendukung kelancaran proyek.</p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="legality-item flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:bg-emerald-50 transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i data-lucide="check" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">Akta Pendirian</span>
+                            </div>
+                            <div
+                                class="legality-item flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:bg-emerald-50 transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i data-lucide="check" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">NIB & NPWP</span>
+                            </div>
+                            <div
+                                class="legality-item flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:bg-emerald-50 transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i data-lucide="check" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">Surat Domisili</span>
+                            </div>
+                            <div
+                                class="legality-item flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hover:bg-emerald-50 transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i data-lucide="check" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">Rekening Bank Resmi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SDM Stats -->
+                    <div>
+                        <h2 class="text-emerald-600 font-semibold tracking-wider uppercase mb-3">Kekuatan Personel</h2>
+                        <h3 class="text-3xl font-bold mb-8 text-slate-900">Didukung SDM Profesional</h3>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                            <div
+                                class="stat-card bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-emerald-50 transition-colors shadow-sm">
+                                <p class="text-4xl font-bold text-emerald-600 mb-2">1</p>
+                                <p class="text-sm text-slate-600 font-medium">Direktur</p>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-emerald-50 transition-colors shadow-sm">
+                                <p class="text-4xl font-bold text-emerald-600 mb-2">1</p>
+                                <p class="text-sm text-slate-600 font-medium">PJO (Operasional)</p>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-emerald-50 transition-colors shadow-sm">
+                                <p class="text-4xl font-bold text-emerald-600 mb-2">1</p>
+                                <p class="text-sm text-slate-600 font-medium">Staff Keuangan</p>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-emerald-50 transition-colors shadow-sm">
+                                <p class="text-4xl font-bold text-emerald-600 mb-2">1</p>
+                                <p class="text-sm text-slate-600 font-medium">HR / Admin</p>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center hover:bg-rose-50 transition-colors col-span-2 sm:col-span-2 shadow-sm">
+                                <p class="text-4xl font-bold text-rose-600 mb-2">27</p>
+                                <p class="text-sm text-slate-600 font-medium">Staff Lapangan Ahli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeri" class="py-24 bg-slate-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16 text-center">
+                <h2 class="text-emerald-400 text-sm md:text-base font-semibold tracking-wider uppercase mb-3">
+                    Dokumentasi Proyek</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Galeri Kegiatan Lapangan</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">Sekilas potret dedikasi dan
+                    profesionalisme tim CV MOMA dalam menjalankan berbagai proyek dan operasional lapangan.</p>
+            </div>
+
+            <!-- Desktop Bento Grid (Hidden on Mobile) -->
+            <div class="hidden md:grid grid-cols-4 grid-rows-5 gap-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[1500px]">
+                <!-- Col 1-2, Row 1-2 (Big Feature) -->
+                <div class="col-span-2 row-span-2 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery1.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 pointer-events-none">
+                        <span class="text-white font-medium flex items-center gap-2"><i data-lucide="camera"
+                                class="w-4 h-4 text-emerald-400"></i> Dokumentasi Lapangan</span>
+                    </div>
+                </div>
+                <!-- Col 3, Row 1 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery2.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Col 4, Row 1 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery3.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Col 3, Row 2 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery4.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Col 4, Row 2 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery5.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Row 3 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery6.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/hero.jpeg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/bahawHero.jpeg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery7.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Row 4 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery8.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery9.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery10.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery11.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Row 5 -->
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery12.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery13.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery14.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-3xl overflow-hidden relative group">
+                    <img src="img/gallery15.jpg" alt="Galeri Proyek"
+                        class="gallery-img cursor-pointer w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+            </div>
+
+            <!-- Mobile Auto Slider (Hidden on Desktop) -->
+            <div class="md:hidden relative w-full overflow-hidden mt-8">
+                <!-- Fade Edges for smooth loop effect -->
+                <div
+                    class="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none">
+                </div>
+                <div
+                    class="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none">
+                </div>
+
+                <div class="flex gap-4 animate-gallery-scroll px-4">
+                    <!-- Original Set (17 images) -->
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery1.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery2.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery3.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery4.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery5.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery6.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/hero.jpeg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/bahawHero.jpeg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery7.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery8.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery9.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery10.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery11.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery12.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery13.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery14.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery15.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+
+                    <!-- Duplicated Set (for infinite scroll illusion) -->
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery1.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery2.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery3.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery4.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery5.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery6.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/hero.jpeg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/bahawHero.jpeg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery7.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery8.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery9.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery10.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery11.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery12.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery13.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery14.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                    <div class="w-72 h-48 shrink-0 rounded-2xl overflow-hidden relative">
+                        <img src="img/gallery15.jpg" alt="Galeri"
+                            class="gallery-img cursor-pointer w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="kontak" class="bg-slate-950 text-slate-400 py-16 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24">
+                    <!-- Brand -->
+                    <div>
+                        <a href="#beranda"
+                            class="flex items-center gap-3 mb-6 inline-flex hover:opacity-80 transition-opacity">
+                            <img src="img/logo.png" alt="Logo CV MOMA" class="w-12 h-12 object-contain">
+                            <div>
+                                <h2 class="text-xl font-bold text-white leading-none">CV. MOMA</h2>
+                            </div>
+                        </a>
+                        <p class="text-sm leading-relaxed mb-6">
+                            Berkomitmen untuk menjadi perusahaan profesional, terpercaya, dan bertanggung jawab dalam
+                            pelaksanaan pekerjaan dan pelayanan kepada mitra kerja.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-6">Tautan Cepat</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#beranda"
+                                    class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i
+                                        data-lucide="chevron-right" class="w-4 h-4"></i> Beranda</a></li>
+                            <li><a href="#tentang"
+                                    class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i
+                                        data-lucide="chevron-right" class="w-4 h-4"></i> Tentang Kami</a></li>
+                            <li><a href="#layanan"
+                                    class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i
+                                        data-lucide="chevron-right" class="w-4 h-4"></i> Layanan</a></li>
+                            <li><a href="#proyek"
+                                    class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i
+                                        data-lucide="chevron-right" class="w-4 h-4"></i> Pengalaman Proyek</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-6">Hubungi Kami</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 mt-1 flex-shrink-0"></i>
+                                <span>Jl. Kanguru No 28, Kel. Harapan, Kwamki Narama, Mimika - Papua Tengah</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
+                                <span>081240208244</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="mail" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
+                                <span>info@cvmoma.co.id <span class="text-xs text-slate-500 ml-2">(contoh)</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-sm">© 2026 CV MOMA. All rights reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all text-slate-400">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all text-slate-400">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all text-slate-400">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox"
+            class="fixed inset-0 z-[100] bg-slate-900/95 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+            <!-- Close Button -->
+            <button id="lightbox-close"
+                class="absolute top-6 right-6 md:top-10 md:right-10 text-white hover:text-rose-400 transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md z-10">
+                <i data-lucide="x" class="w-6 h-6 md:w-8 md:h-8"></i>
+            </button>
+            <!-- Image Container -->
+            <div class="relative max-w-5xl w-full max-h-[85vh] flex items-center justify-center">
+                <img id="lightbox-img" src="" alt="Galeri Fullscreen"
+                    class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl scale-95 transition-transform duration-300">
+            </div>
+        </div>
+
+        <!-- GSAP & JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+:root {
+  /* overflow-x: hidden; */
+  --color-primary: #10b981; /* Emerald 500 */
+  --color-secondary: #f43f5e; /* Rose 500 (Coral-ish) */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8fafc;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.4) 100%);
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Modern Hover Color Change for Cards */
+.org-card > div,
+.service-card,
+.project-card > div > div,
+.keuangan-card.bg-white,
+.keuangan-card.bg-slate-900,
+.stat-card {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.org-card:hover > div,
+.service-card:hover,
+.project-card:hover > div > div,
+.keuangan-card.bg-white:hover,
+.keuangan-card.bg-slate-900:hover,
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 30px -5px rgba(16, 185, 129, 0.15), 0 10px 15px -5px rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.org-card > div::after,
+.service-card::after,
+.project-card > div > div::after,
+.keuangan-card.bg-white::after,
+.stat-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.02));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.keuangan-card.bg-slate-900::after,
+.org-card > div::after {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+}
+
+.org-card:hover > div::after,
+.service-card:hover::after,
+.project-card:hover > div > div::after,
+.keuangan-card.bg-white:hover::after,
+.keuangan-card.bg-slate-900:hover::after,
+.stat-card:hover::after {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.5rem)); } /* -50% width minus half gap */
+}
+
+.animate-gallery-scroll {
+  animation: scrollGallery 25s linear infinite;
+  width: max-content;
+}
+
+.animate-gallery-scroll:hover {
+  animation-play-state: paused;
+}
